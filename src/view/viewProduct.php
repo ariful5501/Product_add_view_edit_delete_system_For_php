@@ -19,7 +19,55 @@
                     <th class="border py-2">Product Price</th>
                     <th class="border py-2">Action</th>
                 </tr>
-                <tr>
+
+
+                <!-- database cannet resut show for view product page -->
+                <?php
+                // database link to viewprodut page --code copy to database select
+                $sqlQuery = "SELECT * FROM `productsnifo` WHERE 1";
+                // resut show perpus connet for db_connection + sqlQuery add
+                $result = mysqli_query($conn, $sqlQuery);
+                // oto sl number add
+                $counter = 0;
+                // database data show for view produt page show code
+                while ($row = mysqli_fetch_assoc($result)) {
+                    // oto sl number add ++
+                    $counter++;
+                    
+                    // show result perpus only
+                    // echo $row["name"];
+
+
+                    ?>
+
+                        <!-- table show for viewprodut page  -->
+                        <tr>
+                            <td class="border text-center px-2 py-2">
+                                <!-- lode a sl number -->
+                                <?php echo $counter; ?></td>
+                            <td class="border text-center px-2 py-2" style="display: flex; justify-content:center;">
+                                <!-- lode a image -->
+                                <img src="../path/<?php echo $row["image"]; ?>" style="width:100px; height:100px margin:0 auto; " class="w-8"/>
+                            </td>
+                            <td class="border px-2 py-2">
+                                <!-- lode a product name -->
+                                <?php echo $row["name"]; ?></td>
+                            <td class="border text-center px-2 py-2">
+                                <!-- lode a product price -->
+                                <?php echo $row["price"]; ?></td>
+                            <td class="border text-center px-2 py-2">
+                            <a href="">Edit</a>
+                            /
+                            <!-- delat button and page php add -->
+                            <a href="./deleteProduct.php?sl=<?php echo $row["sl"]; ?>">Delete</a>
+                            </td>
+                        </tr>
+                    
+                    <?php
+                }
+                ?>
+
+                <!-- <tr>
                     <td class="border text-center px-2 py-2">1</td>
                     <td class="border text-center px-2 py-2">Image</td>
                     <td class="border px-2 py-2">Product Name</td>
@@ -29,7 +77,7 @@
                         /
                         <a href="">Delete</a>
                     </td>
-                </tr>
+                </tr> -->
             </table>
         </div>
 
