@@ -47,7 +47,7 @@
                                 <?php echo $counter; ?></td>
                             <td class="border text-center px-2 py-2" style="display: flex; justify-content:center;">
                                 <!-- lode a image -->
-                                <img src="../path/<?php echo $row["image"]; ?>" style="width:100px; height:100px margin:0 auto; " class="w-8"/>
+                                <img src="../path/<?php echo $row["image"]; ?>" style="width:100px; height:50px margin:0 auto; "class="w-8"/>
                             </td>
                             <td class="border px-2 py-2">
                                 <!-- lode a product name -->
@@ -56,7 +56,7 @@
                                 <!-- lode a product price -->
                                 <?php echo $row["price"]; ?></td>
                             <td class="border text-center px-2 py-2">
-                            <a href="">Edit</a>
+                            <a href="./editProduct.php?sl=<?php echo $row['sl']; ?>">Edit</a>
                             /
                             <!-- delat button and page php add -->
                             <a href="./deleteProduct.php?sl=<?php echo $row["sl"]; ?>">Delete</a>
