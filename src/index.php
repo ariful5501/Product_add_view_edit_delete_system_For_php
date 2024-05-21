@@ -78,6 +78,69 @@
             </ul>
         </section>
     </div> -->
+  
+    <section class="bg-cover bg-center h-64 text-white flex items-center justify-center bg-slate-500" >
+        <h1 class="text-4xl font-bold text-black">Welcome to Our Store</h1>
+    </section>
+    <section class="container mx-auto py-8">
+        <h2 class="text-3xl font-bold mb-6">Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Example Product Card -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="../aaaaa.jpg" alt="Product Name" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-bold mb-2">Product Name</h3>
+                    <p class="text-gray-700 mb-2">$20.00</p>
+                    <a href="/PHPProjectPOS/src/view/viewProduct.php?id=1" class="px-3 py-2 bg-red-300 hover:bg-red-500 hover:text-gray-200 rounded-xl">View Details</a>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="../22-05-2024-03-48-41.png" alt="Product Name" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-bold mb-2">Product Name</h3>
+                    <p class="text-gray-700 mb-2">$20.00</p>
+                    <a href="/PHPProjectPOS/src/view/viewProduct.php?id=1" class="px-3 py-2 bg-red-300 hover:bg-red-500 hover:text-gray-200 rounded-xl">View Details</a>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="/path/to/22-05-2024-03-29-14.png" alt="Product Name" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-bold mb-2">Product Name</h3>
+                    <p class="text-gray-700 mb-2">$20.00</p>
+                    <a href="/PHPProjectPOS/src/view/viewProduct.php?id=1" class="px-3 py-2 bg-red-300 hover:bg-red-500 hover:text-gray-200 rounded-xl">View Details</a>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="/path/to/22-05-2024-03-29-14.png" alt="Product Name" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-bold mb-2">Product Name</h3>
+                    <p class="text-gray-700 mb-2">$20.00</p>
+                    <a href="/PHPProjectPOS/src/view/viewProduct.php?id=1" class="px-3 py-2 bg-red-300 hover:bg-red-500 hover:text-gray-200 rounded-xl">View Details</a>
+                </div>
+            </div>
+            <!-- Repeat for more products -->
+        </div>
+    </section>
+    <!-- Example structure for viewProduct.php -->
+    <section class="container mx-auto py-8">
+        <div class="flex flex-col md:flex-row gap-6">
+            <div class="w-full md:w-1/2">
+                <img src="/path/to/22-05-2024-03-29-14.png" alt="Product Name" class="w-full h-96 object-cover">
+            </div>
+            <div class="w-full md:w-1/2">
+                <h2 class="text-3xl font-bold mb-4">Product Name</h2>
+                <p class="text-gray-700 mb-4">$20.00</p>
+                <p class="text-gray-700 mb-4">Product description goes here...</p>
+                <button class="px-4 py-2 bg-red-300 hover:bg-red-500 hover:text-gray-200 rounded-xl">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-slate-300 py-4">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-700">&copy; 2024 Your Store. All rights reserved.</p>
+        </div>
+    </footer>
+
 
     <script src="/PHPProjectPOS/src/assets/js/main.js"></script>
     <!-- <script>
