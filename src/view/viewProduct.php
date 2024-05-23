@@ -58,7 +58,7 @@
                             <td class="border text-center px-2 py-2">
                             <a href="./editProduct.php?sl=<?php echo $row['sl']; ?>">Edit</a>
                             /
-                            <!-- delat button and page php add -->
+                            <!-- delat button and page php add ok-->
                             <a href="./deleteProduct.php?sl=<?php echo $row["sl"]; ?>">Delete</a>
                             </td>
                         </tr>
